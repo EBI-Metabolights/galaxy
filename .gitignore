@@ -75,12 +75,14 @@ shed_data_manager_conf.xml
 object_store_conf.xml
 job_metrics_conf.xml
 workflow_schedulers_conf.xml
-config/*
+# commenting this out as we want changes to config files to be pulled down autonomously by the server
+#config/*
 config/plugins/interactive_environments/**/*.ini
 config/plugins/**/.cache
 !config/plugins
 static/welcome.html.*
-static/welcome.html
+# same here, we want changes here to be pulled down
+# static/welcome.html
 static/client_build_hash.txt
 lib/galaxy_test/selenium/jupyter/galaxy_selenium_context.yml
 
