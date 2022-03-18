@@ -917,7 +917,7 @@ galaxy:
   #message_box_class: info
 
   # Append "{brand}" text to the masthead.
-  #brand: null
+  brand: "{MetaboFlow}"
 
   # Display the "Galaxy" text in the masthead.
   #display_galaxy_brand: true
