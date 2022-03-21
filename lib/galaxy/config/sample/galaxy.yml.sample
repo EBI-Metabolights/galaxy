@@ -21,7 +21,7 @@ uwsgi:
   # The address and port on which to listen.  By default, only listen to
   # localhost (galaxy will not be accessible over the network).  Use
   # ':8080' to listen on all available network interfaces.
-  http: 127.0.0.1:8080
+  http: :8080
 
   # By default uWSGI allocates a very small buffer (4096 bytes) for the
   # headers of each request. If you start receiving "invalid request
@@ -140,7 +140,7 @@ galaxy:
   # string to specify an external database instead.
   # Sample default
   # 'sqlite:///<data_dir>/universe.sqlite?isolation_level=IMMEDIATE'
-  #database_connection: null
+  database_connection: postgresql://galaxy:changeme@localhost/galaxy
 
   # If the server logs errors about not having enough database pool
   # connections, you will want to increase these values, or consider
