@@ -305,7 +305,7 @@ galaxy:
   # will fail.
   # The value of this option will be resolved with respect to
   # <data_dir>.
-  #tool_dependency_dir: dependencies
+  tool_dependency_dir: dependencies
 
   # The dependency resolvers config file specifies an ordering and
   # options for how Galaxy resolves tool dependencies (requirement tags
@@ -316,12 +316,12 @@ galaxy:
   # for more information on these options.
   # The value of this option will be resolved with respect to
   # <config_dir>.
-  #dependency_resolvers_config_file: dependency_resolvers_conf.xml
+  dependency_resolvers_config_file: dependency_resolvers_conf.xml
 
   # conda_prefix is the location on the filesystem where Conda packages
   # and environments are installed.
   # Sample default '<tool_dependency_dir>/_conda'
-  #conda_prefix: null
+  conda_prefix: <tool_dependency_dir>/_conda
 
   # Override the Conda executable to use, it will default to the one on
   # the PATH (if available) and then to <conda_prefix>/bin/conda
@@ -344,7 +344,7 @@ galaxy:
   # Set to true to instruct Galaxy to install Conda from the web
   # automatically if it cannot find a local copy and conda_exec is not
   # configured.
-  #conda_auto_init: true
+  conda_auto_init: true
 
   # You must set this to true if conda_prefix and job_working_directory
   # are not on the same volume, or some conda dependencies will fail to
