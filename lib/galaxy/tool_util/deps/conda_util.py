@@ -443,7 +443,8 @@ def install_conda(conda_context, force_conda_build=False):
         if exit_code:
             return exit_code
         exit_code = conda_context.shell_exec(install_cmd)
-    except Exception:
+    except Exception as e:
+        log.exception(str(e))
         log.exception('Failed to install conda')
         return 1
     finally:
