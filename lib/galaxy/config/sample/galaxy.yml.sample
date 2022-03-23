@@ -305,7 +305,7 @@ galaxy:
   # will fail.
   # The value of this option will be resolved with respect to
   # <data_dir>.
-  tool_dependency_dir: dependencies/
+  tool_dependency_dir: database/dependencies
 
   # The dependency resolvers config file specifies an ordering and
   # options for how Galaxy resolves tool dependencies (requirement tags
