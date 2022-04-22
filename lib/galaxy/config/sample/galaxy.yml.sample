@@ -917,7 +917,7 @@ galaxy:
   #message_box_class: info
 
   # Append "{brand}" text to the masthead.
-  brand: "{MetaboFlow}"
+  brand: "MetaboFlow"
 
   # Display the "Galaxy" text in the masthead.
   #display_galaxy_brand: true
@@ -1561,7 +1561,7 @@ galaxy:
   # Admin section of the server, and will have access to create users,
   # groups, roles, libraries, and more.  For more information, see:
   # https://galaxyproject.org/admin/
-  admin_users: cmartin@ebi.ac.uk
+  admin_users: cmartin@ebi.ac.uk, ozgur@ebi.ac.uk, ozgur2@ebi.ac.uk, famaladoss@ebi.ac.uk, payne@ebi.ac.uk, ppruski@ebi.ac.uk
 
   # Force everyone to log in (disable anonymous access).
   #require_login: false
