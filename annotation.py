@@ -1153,7 +1153,7 @@ def annotate_compounds(peaklist, lib_adducts, ppm, db_out, db_name, patterns=Tru
         temp_db_local = temp_db_local.replace(".sql.gz", "")
         temp_db_local = ''.join([i for i in temp_db_local if i is not "_"])
         temp_db_local = ''.join([i for i in temp_db_local if not i.isdigit()])
-
+        print(f'{repr(temp_db_name)}/{repr(temp_db_local)}')
         if temp_db_name == temp_db_local:
             return True
         else:
